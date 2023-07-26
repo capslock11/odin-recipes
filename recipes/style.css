@@ -180,7 +180,7 @@ a {
 }
 
 .direction {
-    min-width: 450px;
+    min-width: 400px;
 }
 
 .title {
@@ -270,17 +270,43 @@ fonts #FF7F11/ */
 
     .content {
         display: flex;
+        flex-grow: 1;
         flex-direction: column;
         justify-content: center;
         align-items: baseline;
-
         border-radius: 1rem;
         padding: 1rem 1rem;
+
+
+    }
+
+    .direction {
+        max-width: 320px;
     }
 
     .note {
         padding: .2rem 1rem;
         font-size: .8rem;
         margin-bottom: 1rem;
+    }
+
+    .title {}
+
+    .container {
+        display: flex;
+        flex-grow: 1;
+
+
+    }
+
+    .recipe-pic {
+        max-width: 320px;
+    }
+
+    li {
+        padding: 0;
+        margin: 0;
+        max-width: 320px;
+        font-size: 1rem;
     }
 }
