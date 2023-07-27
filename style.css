@@ -124,7 +124,7 @@ a {
 
 .menu-pic {
     width: 300px;
-    min-height: 300px;
+    height: 250px;
     padding: .5rem;
     margin-top: 1rem;
     border-radius: 1rem;
@@ -134,6 +134,8 @@ a {
 .menu-pic:hover {
     opacity: .8;
 }
+
+
 
 .main-link {
     color: white;
@@ -214,13 +216,24 @@ a {
 }
 
 
-.note {
-    text-align: center;
-    font-style: italic;
-    opacity: .7;
+button {
+    color: #262626;
+    margin: 0;
+    padding: 0 .8rem;
+    transition: 200ms ease;
+    border: 0;
+    border-radius: .2rem;
+
 }
 
+button:hover {
+    background: #f5a65b;
+    color: white;
+}
 
+button a {
+    color: #262626;
+}
 
 /* mobile */
 /* colors:
@@ -252,20 +265,26 @@ fonts #FF7F11/ */
     }
 
     .main-link {
-        font-size: 1.5rem;
+        font-size: 1rem;
         display: block;
         margin: 0;
         border-radius: 1rem 1rem 0 0;
+        padding: .2;
 
 
     }
 
     .menu-pic {
         margin: 0;
-        padding: 0 0 .5rem 0;
+        padding: 0;
         border-radius: 0 0 1rem 1rem;
-        width: 300px;
-        max-height: 100px;
+        width: 250px;
+        height: 180px;
+    }
+
+    .recipe-pic {
+        width: 250px;
+        height: 200px;
     }
 
     .content {
@@ -284,14 +303,6 @@ fonts #FF7F11/ */
         max-width: 320px;
     }
 
-    .note {
-        padding: .2rem 1rem;
-        font-size: .8rem;
-        margin-bottom: 1rem;
-    }
-
-    .title {}
-
     .container {
         display: flex;
         flex-grow: 1;
@@ -304,9 +315,12 @@ fonts #FF7F11/ */
     }
 
     li {
-        padding: 0;
         margin: 0;
         max-width: 320px;
         font-size: 1rem;
+    }
+
+    button {
+        margin-bottom: .5rem;
     }
 }
